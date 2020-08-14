@@ -2,7 +2,9 @@ const express = require('express');
 const mqtt = require('mqtt');
 
 const Express = new express;
-const client = mqtt.connect('mqtt://test.mosquitto.org');
+var client = mqtt.connect('mqtt://try:try@broker.shiftr.io', {
+    clientId: 'Node'
+});
 
 client.on('connect', () => {
     console.log('Connected to broker at: ' + client.options.host);
