@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "ESNext",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "watch": true
+    },
+}
